@@ -1,4 +1,5 @@
-class Moto{
+package trabalhounifor1;
+   class Moto{
 
     private String marca;
     private String modelo;
