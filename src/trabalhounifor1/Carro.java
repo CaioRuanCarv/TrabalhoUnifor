@@ -51,4 +51,8 @@ public class Carro {
     public void acelerar() {
         System.out.println("Carro acelerando...");
     }
+
+    public void chamarMetodoDaMoto(Moto moto) {
+        moto.ligar();
+    }
 }
