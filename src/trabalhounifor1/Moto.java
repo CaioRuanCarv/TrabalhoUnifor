@@ -1,5 +1,5 @@
 package trabalhounifor1;
-   class Moto{
+   class Moto extends Veiculo{
 
     private String marca;
     private String modelo;
@@ -8,12 +8,13 @@ package trabalhounifor1;
     private int ano;
 
     public Moto (String marca, String modelo, String cor, int ano, String combustivel) {
+        super(modelo); 
         this.marca = marca;
-        this.modelo = modelo;
         this.cor = cor;
         this.combustivel = combustivel;
         this.ano = ano;
     }
+
     public String getMarca() {
         return marca;
     }
@@ -25,7 +26,6 @@ package trabalhounifor1;
     }
     public int getAno() {
         return ano;
-
     }
     public String getCombustivel() {
         return combustivel;
