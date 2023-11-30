@@ -1,5 +1,5 @@
 package trabalhounifor1;
-   class Moto extends veiculo{
+   class Moto extends Veiculo{
 
     private String marca;
     private String modelo;
