@@ -12,23 +12,22 @@ public class Principal {
         pessoa1.comprarVeiculo(concessionaria, carro);
 
         // Imprimindo informações do carro
-        System.out.println("Modelo: " + carro.getModelo());
         System.out.println("Marca: " + carro.getMarca());
         System.out.println("Ano: " + carro.getAno());
         System.out.println("Preço: R$" + carro.getPreco());
 
         carro.acelerar();
+        carro.freiar();
 
         System.out.println(pessoa1.getVeiculoComprado().getModelo());
 
         //venda dois
         Pessoa<Veiculo> pessoa2 = new Pessoa<>("Mateus");
-        System.out.println(pessoa2.getVeiculoComprado().getModelo());
         pessoa2.comprarVeiculo(concessionaria, moto);
+        System.out.println(pessoa2.getVeiculoComprado().getModelo());
 
 
         System.out.println("Marca: " + moto.getMarca());
-        System.out.println("Modelo: " + moto.getModelo());
         System.out.println("cor: " + moto.getCor());
         System.out.println("Ano: " + moto.getAno());
         System.out.println("Combustível: " + moto.getCombustivel());
@@ -38,14 +37,11 @@ public class Principal {
         moto.freiar();
         moto.desligar();
 
-
         //venda tres
         Pessoa<Veiculo> pessoa3 = new Pessoa<>("Marcos");
-        pessoa2.comprarVeiculo(concessionaria, carroEsportivo);
+        pessoa3.comprarVeiculo(concessionaria, carroEsportivo);
         System.out.println(pessoa3.getVeiculoComprado().getModelo());
 
-
-        // Chamando os métodos específicos do carro esportivo
         //meuCarroEsportivo.ativarTurbo();
         carroEsportivo.fazerDrift();
         carroEsportivo.acelerar();

@@ -1,16 +1,13 @@
 package trabalhounifor1;
 
-public class Carro {
+public class Carro extends Veiculo {
     private String modelo;
     private String marca;
     private int ano;
     private double preco;
 
-    public Carro() {
-    }
-
     public Carro(String modelo, String marca, int ano, double preco) {
-        this.modelo = modelo;
+        super(modelo);
         this.marca = marca;
         this.ano = ano;
         this.preco = preco;
@@ -50,6 +47,10 @@ public class Carro {
 
     public void acelerar() {
         System.out.println("Carro acelerando...");
+    }
+
+    public void freiar() {
+        System.out.println("Carro freando!");
     }
 
     public void chamarMetodoDaMoto(Moto moto) {
